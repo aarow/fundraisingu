@@ -1,18 +1,18 @@
 <footer id="main-footer">
 		<div class="wrapper">
 			<div id="footer-widgets">
-				<ul class=" container_12">
+				<ul class=" container_12 clearfix">
 					<?php dynamic_sidebar('Sidebar 2'); ?>
 				</ul>
 			</div>
 			
-			<nav id="footer-nav" class="container_12">
+			<nav id="footer-nav" class="container_12 clearfix">
 				<ul class="grid_3">
 					<?php wp_list_pages('title_li=&depth=1');	?>
 				</ul>
 			</nav>
 					
-			<div id="copyright" class="container_12">
+			<div id="copyright" class="container_12 clearfix">
 				<p class="grid_12">
 					&#169;2012 Fundraising University &#8226; P.O. Box 540314, Omaha, NE 68154 &#8226; 1.800.217.1962 (main) &#8226; 1.800.854.7699 (fax)			
 				</p>

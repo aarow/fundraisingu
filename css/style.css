@@ -1,6 +1,11 @@
 /* @override 
 	http://localhost/fundraisingu/wp-content/themes/fundraisingu/css/style.css?v=2 */
 
+/* @group Boilerplate and Grid */
+
+/* @override 
+	http://localhost/fundraisingu/wp-content/themes/fundraisingu/css/style.css?v=2 */
+
 /*  HTML5 ✰ Boilerplate  */
 
 @import url(http://fonts.googleapis.com/css?family=Bevan);
@@ -778,9 +783,13 @@ body {
   h2, h3{ page-break-after: avoid; }
 }
 
+/* @end */
 
 
 
+/*  Theme styles  */
+
+/* @group Generic */
 
 body {
 	background: #0c2047;
@@ -791,6 +800,21 @@ body {
 	margin: 0 auto;
 	width: 960px;
 }
+
+.clearfix:before,
+.clearfix:after
+{
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clearfix:after {clear: both;}
+.clearfix {zoom: 1;} /* IE < 8 */
+
+/* @end */
+
+/* @group Header */
 
 #main-header {
 	height: 70px;
@@ -811,11 +835,6 @@ body {
 	display: block;
 }
 
-#main {
-	height: 610px;
-	background: #cacaca;
-}
-
 #main-nav li {
 	display: inline-block;
 	margin-right: 15px;
@@ -831,9 +850,13 @@ body {
 	font-size: 16px;
 }
 
+/* @end */
 
-#main-footer {
-	-webkit-font-smoothing: antialiased;
+/* @group Main */
+
+#main {
+	height: 610px;
+	background: #cacaca;
 }
 
 #right-sidebar ul {
@@ -848,6 +871,13 @@ article.page h2 {
 	font-weight: lighter;
 }
 
+/* @end */
+
+/* @group Footer */
+
+#main-footer {
+}
+
 #main-footer {
 	color: #FFF;
 	padding: 30px 0 0 0;
@@ -855,6 +885,7 @@ article.page h2 {
 
 #footer-widgets {
 	font-size: 14px;
+	-webkit-font-smoothing: antialiased;
 }
 
 #footer-widgets li {
@@ -875,9 +906,29 @@ article.page h2 {
 	padding: 10px;
 }
 
+#footer-nav {
+	margin: 30px 0 0 0;
+}
+
+#footer-nav a {
+	color: #cacaca;
+	text-decoration: none;
+}
+
+#footer-nav a:hover {
+	color: #607890;
+}
+
+#copyright {
+	margin: 30px 0 10px 0;
+}
+
+/* @end */
+
+/* @group Buttons */
 
 /*
- generic button style
+  button styles
 */
 
 .button
@@ -967,3 +1018,5 @@ article.page h2 {
 .btn-widget:active {
 	position: absolute;
 }
+
+/* @end */

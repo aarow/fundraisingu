@@ -5,7 +5,7 @@
  
 get_header(); ?>
 
-<div id="main">
+<div id="main" class="main clearfix">
 	<div class="wrapper container_12">
 		<div class="grid_9">
 			<?php get_template_part( 'loop', 'page' ); ?>

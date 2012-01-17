@@ -792,7 +792,7 @@ body {
 /* @group Generic */
 
 body {
-	background: #0c2047;
+	background: #0c2047 url(../img/bg-footer_basic.jpg);
 	font-family: "PT Sans", "Helvetica Neue", "Helvetica", sans-serif;
 }
 
@@ -818,50 +818,84 @@ body {
 
 #main-header {
 	height: 70px;
-	background: #0e3569;
+	background: #0e3569 url(../img/bg-header_basic.jpg);
+}
+
+#main-header .wrapper {
+	position: relative;
 }
 
 #main-header h1 {
+	position: absolute;
+	z-index: 2;
 	text-indent: -999em;
-	float: left;
-}
-#main-header h1 a {
-	display: table-cell;
-	vertical-align: middle;
-	text-shadow: 0 1px 2px #000000;
+	left: 405px;
+	top: -10px;
 }
 
 #main-header img {
 	display: block;
+	width: 150px;
+}
+
+#main-nav {
+	float:left;
+	   width:100%;
+	   overflow:hidden;
+	   position:relative;
+}
+
+#main-nav ul {
+	clear:left;
+	   float:left;
+	   list-style:none;
+	   margin:0px 0 0 0;
+	   padding:0;
+	   position:relative;
+	   left:50.5%;
+	   text-align:center;
 }
 
 #main-nav li {
 	display: inline-block;
-	margin-right: 15px;
+	position:relative;
+	right: 50%;
+	margin: 0 15px;
+}
+
+#main-nav li:nth-child(2) {
+	margin-right: 150px;
 }
 
 #main-nav a {
-	display: table-cell;
-	color: #ffffff;
-	text-decoration: none;
-	height: 70px;
+	display:table-cell;
 	vertical-align: middle;
+	color: #cacaca;
+	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 16px;
+	height: 70px;
+}
+
+#main-nav a:hover {
+	color: #ffffff;
+	text-shadow: 0px 0px 30px #FFF;
 }
 
 /* @end */
 
 /* @group Main */
 
-#main {
+#main-home {
 	height: 610px;
-	background: #cacaca;
+	background: url(../img/bg-main_home.jpg) repeat-x, url(../img/bg-main_basic.jpg)
+	;
+	position: relative;
 }
 
-#right-sidebar ul {
-	margin-left: 0;
-	list-style: none;
+.main {
+	background: url(../img/bg-main_basic.jpg);
+	padding: 20px 0 0 0;
 }
 
 article.page h2 {
@@ -871,14 +905,26 @@ article.page h2 {
 	font-weight: lighter;
 }
 
+#main-home article {
+	width: 960px;
+	position: absolute;
+	bottom: 20px;
+	margin: 0 10px;
+}
+
+#right-sidebar ul {
+	margin-left: 0;
+	list-style: none;
+}
+
+
+
 /* @end */
 
 /* @group Footer */
 
 #main-footer {
-}
-
-#main-footer {
+	background: url(../img/bg-footer_top.jpg) repeat-x;
 	color: #FFF;
 	padding: 30px 0 0 0;
 }

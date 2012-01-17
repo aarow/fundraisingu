@@ -39,12 +39,12 @@
 
 <body>
 <div id="container">
-	<header id="main-header">
+	<header id="main-header" class="clearfix">
 		<div class="wrapper">
 			<h1>
 				<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 					<?php bloginfo( 'name' ); ?>
-					<img id="main-logo" src="<?php echo get_bloginfo('template_directory'); ?>/images/main-logo.png">
+					<img id="main-logo" src="<?php echo get_bloginfo('template_directory'); ?>/img/logo-header.png">
 				</a>
 			</h1>
 					

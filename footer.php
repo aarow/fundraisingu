@@ -1,4 +1,4 @@
-<footer id="main-footer">
+<footer id="main-footer" class="clearfix">
 		<div class="wrapper">
 			<div id="footer-widgets">
 				<ul class=" container_12 clearfix">

@@ -8,6 +8,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	
 	<title>
 		<?php
@@ -35,6 +36,15 @@
 	<link rel="stylesheet" href="<?php bloginfo("stylesheet_directory");?>/css/style.css?v=2">
 	<link rel="stylesheet" href="<?php bloginfo("stylesheet_directory");?>/style.css">
 	<?php wp_head(); ?>
+	
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	
+	
+	<!-- fancybox -->
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/js/fancybox/jquery.fancybox.css?v=2.0.4" type="text/css" media="screen" />
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/fancybox/jquery.fancybox.pack.js?v=2.0.4"></script>
+		
 </head>
 
 <body>

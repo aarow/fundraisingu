@@ -6,7 +6,7 @@
 				<h2><?php the_title(); ?></h2>
 			<?php } ?>
 		</header>				
-		<div class="the_content">
+		<div class="the_content grid_9">
 			<?php the_content(); ?>
 		</div>			
 		<footer>

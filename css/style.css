@@ -81,8 +81,11 @@ input:invalid, textarea:invalid { border-radius: 1px;  -moz-box-shadow: 0px 0px 
 .no-boxshadow input:invalid, 
 .no-boxshadow textarea:invalid { background-color: #f0dddd; }
 
-::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
-::selection { background:#FF5E99; color:#fff; text-shadow: none; } 
+::-moz-selection{
+	color:#fff; text-shadow: none;
+background-color: #406eaa;
+}
+::selection { background:#406eaa; color:#fff; text-shadow: none; } 
 a:link { -webkit-tap-highlight-color: #FF5E99; } 
 
 button {  width: auto; overflow: visible; }
@@ -1404,6 +1407,23 @@ li.product-image-list-li-active {
 
 .fancybox-outer{
     background: #000 url("../img/ajax-loader.gif") no-repeat 50% 50% !important;
+}
+
+.testimonial_list_item_body {
+	background: #FFF url(../img/bg_testimonial.jpg) no-repeat;
+	margin: 0;
+	width: 400px;
+	height: 397px;
+	padding: 200px 50px 50px 50px;
+}
+
+.testimonial_list_item_body p {
+	font-size: 14px;
+	color: #000;
+}
+
+.testimonial_list_item_signature {
+	margin: 0 0 0 50%;
 }
 
 /* @end */

@@ -28,6 +28,9 @@
 
 <script type="text/javascript">
 	$(document).ready(function() {
+	
+	
+		//shrink header - currently working in FF9
 		var theElement = $('article h2 span');
 		
 		var elementHeight = parseInt(theElement.height());

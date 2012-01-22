@@ -77,7 +77,8 @@ get_header(); ?>
 			'width'			: 600
 		});
 		$('.testimonialLetter').fancybox({
-			'type' 			: 'inline'
+			'type' 			: 'inline',
+			'padding'		: 0
 		});
 </script>
 

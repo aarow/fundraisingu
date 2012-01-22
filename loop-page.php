@@ -3,7 +3,7 @@
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<header>
 			<?php if ( !(is_front_page()) ) { ?>
-				<h2><?php the_title(); ?></h2>
+				<h2 id="articleHeader"><span><?php the_title(); ?></span></h2>
 			<?php } ?>
 		</header>				
 		<div class="the_content grid_9">

@@ -11,8 +11,6 @@ get_header(); ?>
 			<?php get_template_part( 'loop', 'page' ); ?>
 		</div>
 		
-		
-		
 		<?php get_template_part( 'sidebar', 'events' ); ?>
 
 	</div>

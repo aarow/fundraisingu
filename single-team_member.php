@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Products Page
+ * Template Name: Team Member Page
  */
  
 get_header(); ?>
@@ -15,7 +15,7 @@ get_header(); ?>
 					</header>				
 					<div class="the_content grid_9">
 						<div class="member_picture">
-							<img src="<?php print_custom_field('member_picture:to_image_src'); ?>" class="page-curl" />
+							<img src="<?php print_custom_field('member_picture:to_image_src'); ?>" class="shadow-box" />
 						</div>
 						
 						<div class="member_info">
@@ -29,7 +29,9 @@ get_header(); ?>
 								<?php print_custom_field('member_phone'); ?>
 							</div>
 							<div class="member_email">
-								<?php print_custom_field('member_email'); ?>
+								<a href="mailto:<?php print_custom_field('member_email'); ?>">
+									<?php print_custom_field('member_email'); ?>
+								</a>
 							</div>
 							<div class="memberprofile">
 								<?php print_custom_field('memberprofile'); ?>

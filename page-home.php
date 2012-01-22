@@ -11,18 +11,39 @@ get_header(); ?>
 		
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header>
-					<?php if ( !(is_front_page()) ) { ?>
-						<h2><?php the_title(); ?></h2>
-					<?php } ?>
-				</header>				
-				<div class="the_content grid_9">
-					<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
-					
+					<h2>
+						<img src="<?php echo get_bloginfo('template_directory'); ?>/img/star.png" alt="" />
+						<?php the_title(); ?>
+						<img src="<?php echo get_bloginfo('template_directory'); ?>/img/star.png" alt="" />
+					</h2>
+					<h3>
+						<?php echo get_bloginfo( 'description', 'display' ); ?>
+					</h3>
+				</header>
+				<span class="clear"></span>
+				<div class="the_content grid_9">				
 					<?php the_content(); ?>
 				</div>			
-				<footer>
-					<?php edit_post_link( __( 'Edit' ), '<p>', '</p>' ); ?>
-				</footer>
+				
+				
+				<div class="slide-box-home">
+					<ul>
+						<?php
+							$args = array( 	'post_type' => 'slide', 
+											'order'=> 'ASC', 
+											'orderby' => 'sort_index', 
+											'numberposts' => 1 );
+							$postslist = get_posts( $args );
+							foreach ($postslist as $post) :  setup_postdata($post); 
+						?> 
+						<li>
+							<a href="<?php print_custom_field('slide_link:to_link_href','http://yoursite.com/default/page/');?>">
+								<img src="<?php print_custom_field('slide_image:to_image_src'); ?>" />
+							</a>
+						</li>
+						<?php endforeach; ?>
+					</ul>
+				</div>				
 			</article>
 			
 		<?php endwhile; ?>

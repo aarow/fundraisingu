@@ -794,6 +794,15 @@ body {
 
 /* @group Generic */
 
+.pdf-icon::before {
+	content: "";
+	display: inline-block;
+	background: url(../img/icon-pdf.png) no-repeat;
+	width: 16px;
+	height: 16px;
+	margin: 0 5px 0 0;
+}
+
 body {
 	background: #0c2047 url(../img/bg-footer_basic.jpg);
 	font-family: "PT Sans", "Helvetica Neue", "Helvetica", sans-serif;
@@ -951,7 +960,24 @@ p {
         border-radius: .15em 0 0 .15em;
         pointer-events: none;
 }
+
+/* Buttons and inputs */
+submit.button, button.button, input.button
+{
+        cursor: pointer;
+        overflow: visible; /* removes extra side spacing in IE */
+}
+
+/* removes extra inner spacing in Firefox */
+button::-moz-focus-inner
+{
+  border: 0;
+  padding: 0;
+}
+
 /* @end */
+
+
 
 /* @group Sidebar Header */
 
@@ -1138,7 +1164,7 @@ article h2 span {
 
 .calculator-box {
 	padding: 10px;
-	background-color: #134381;
+	background-color: #144a8f;
 	color: #FFF;
 }
 
@@ -1159,6 +1185,11 @@ article h2 span {
 #calculator-input {
 	width: 50px;
 	height: 30px;
+	text-align: right;
+}
+
+.calculator-button {
+	width: 150px;
 }
 
 #moneyraised {
@@ -1166,26 +1197,35 @@ article h2 span {
 	vertical-align: middle;
 }
 
-
 .product_list {
 	list-style: none;
-	margin: 0;
+	margin: 0 0 0 10px;
+	display: block;
 }
 
 .product_list_image {
-	display: inline;
 	width: 80px;
 }
 
 .product_list li {
-	display: table-cell;
-	vertical-align: middle;
+	display: inline-block;
 	padding: 5px;
 	margin: 5px;
 	height: 80px;
 }
 
+.product-image-list {
+	list-style: none;
+}
+
+.product-image-list img {
+	width: 100%;
+}
+
+
+
 /* @end */
+
 
 /* @group About Page / Member List */
 

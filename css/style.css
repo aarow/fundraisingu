@@ -1214,15 +1214,37 @@ article h2 span {
 	height: 80px;
 }
 
-.product-image-list {
+.product-image-list,
+.product-image-thumb-list {
 	list-style: none;
+	margin: 0;
+}
+
+.product-image-list li {
+	display: none;
+}
+
+li.product-image-list-li-active {
+	display: block;
 }
 
 .product-image-list img {
 	width: 100%;
 }
 
+.product-image-thumb-list {
+	display: block;
+	margin: 0 auto 5px auto;
+}
 
+.product-image-thumb-list li {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	border: 1px solid #333;
+	padding: 5px;
+	margin: 0 2px 5px 0;
+}
 
 /* @end */
 

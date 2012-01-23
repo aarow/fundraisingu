@@ -1143,7 +1143,7 @@ article h2 span {
 
 #main-home {
 	height: 610px;
-	background: url(../img/bg-main_home.jpg) repeat-x, url(../img/bg-main_basic.jpg);
+	background: url(../img/slide-frame.png) no-repeat center 158px, url(../img/bg-main_home.jpg) repeat-x, url(../img/bg-main_basic.jpg);
 	position: relative;
 }
 
@@ -1165,27 +1165,19 @@ article h2 span {
 #main-home .the_content {
 	width: 960px;
 	position: absolute;
-	bottom: 50px;
+	bottom: 40px;
 	margin: 0 10px;
 	font-size: 18px;
 }
 
-.slide-box-home-frame {
-	height: 371px;
-	width: 1092px;
-	background: url(../img/slide-frame.png) no-repeat;
-	margin: 30px 0 0 -66px;
-	padding: 13px 0 0 55px;
-}
-
 .slide-box-home {
-	margin: 0 0 0 23px;
-	height: 331px;
-	width: 944px;
+	margin: 40px 0 0 12px;	
+	
 }
 
-.slide-box-home ul {
-	list-style: none;
+.slide-box-home img {
+	display: block;
+	width: 944px;
 }
 /* @end */
 

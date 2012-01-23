@@ -1426,6 +1426,37 @@ li.product-image-list-li-active {
 	margin: 0 0 0 50%;
 }
 
+.testimonials {
+	list-style: none;
+}
+
+.testimonial_list_item_header {
+	height: 50px;
+	display: block;
+	position: relative;
+}
+
+.testimonialLetter,
+.testimonialVideo {
+	font-size: 16px;
+	margin: 0 0 0 55px;
+}
+
+.testimonialLetter::before,
+.testimonialVideo::before {
+	content: "";
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	background: url(../img/icon-letter.png) no-repeat;
+	position: absolute;
+	top: -15px;
+}
+
+.testimonialVideo::before {
+	background: url(../img/icon-movie.png) no-repeat;
+}
+
 /* @end */
 /* @group Footer */
 

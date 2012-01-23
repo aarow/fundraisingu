@@ -52,6 +52,7 @@
 	
 	
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/imgscale.jquery.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.cycle.lite.js"></script>
 	
 </head>
 

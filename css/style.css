@@ -834,6 +834,27 @@ p {
 
 
 /* @end */
+
+.abenity_ribbon {
+	position: absolute;
+	top: 45px;
+	right: 10px;
+	width: 150px;
+	height: 151px;
+	background: url(../img/bing.png) no-repeat;
+}
+
+.abenity_ribbon_link {
+	display: block;
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	top: 25px;
+	right: 30px;
+	text-indent: -999em;
+}
+
+
 /* @group shadow boxes */
 
 .shadow-box-container {
@@ -1149,12 +1170,18 @@ article h2 span {
 	font-size: 18px;
 }
 
-.slide-box-home {
+.slide-box-home-frame {
 	height: 371px;
 	width: 1092px;
 	background: url(../img/slide-frame.png) no-repeat;
 	margin: 30px 0 0 -66px;
 	padding: 13px 0 0 55px;
+}
+
+.slide-box-home {
+	margin: 0 0 0 23px;
+	height: 331px;
+	width: 944px;
 }
 
 .slide-box-home ul {

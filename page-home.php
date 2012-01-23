@@ -26,13 +26,28 @@ get_header(); ?>
 				</div>			
 				
 				
-				<div class="slide-box-home">
-					<ul>
+				<div class="slide-box-home-frame">
+					<div class="slide-box-home">
 						<?php
 							$args = array( 	'post_type' => 'slide', 
 											'order'=> 'ASC', 
 											'orderby' => 'sort_index', 
-											'numberposts' => 1 );
+											'numberposts' => 2 );
+							$postslist = get_posts( $args );
+							foreach ($postslist as $post) :  setup_postdata($post); 
+						?> 
+						<a href="<?php print_custom_field('slide_link:to_link_href','http://yoursite.com/default/page/');?>">
+							<img src="<?php print_custom_field('slide_image:to_image_src'); ?>" />
+						</a>
+						<?php endforeach; ?>
+					</div>
+				
+<!--					<ul>
+						<?php
+							$args = array( 	'post_type' => 'slide', 
+											'order'=> 'ASC', 
+											'orderby' => 'sort_index', 
+											'numberposts' => 2 );
 							$postslist = get_posts( $args );
 							foreach ($postslist as $post) :  setup_postdata($post); 
 						?> 
@@ -43,11 +58,16 @@ get_header(); ?>
 						</li>
 						<?php endforeach; ?>
 					</ul>
+					-->
 				</div>				
 			</article>
-			
 		<?php endwhile; ?>
 	</div>
 </div>
+
+<script type="text/javascript">
+	$('.slide-box-home').cycle();
+</script>
+
 
 <?php get_footer(); ?>

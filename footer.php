@@ -21,6 +21,10 @@
 	</footer>
 </div> <!-- end of #container -->
 
+<div class="abenity_ribbon">
+	<a href="https://www.abenity.com/FundraisingU/register?registration_code=RC402" target="_blank" class="abenity_ribbon_link">Go to Abenity</a>
+</div>
+
 <!-- scripts concatenated and minified via ant build script-->
 <script src="<?php bloginfo("stylesheet_directory");?>/js/plugins.js"></script>
 <script src="<?php bloginfo("stylesheet_directory");?>/js/script.js"></script>

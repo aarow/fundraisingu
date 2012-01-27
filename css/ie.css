@@ -1,0 +1,13 @@
+#main-header {
+	background: url(../img/bg-header_basic.jpg);
+}
+
+.main {
+	background: url(../img/bg-article_header.jpg) repeat-x #cbcbcb;
+	padding: 0 0 97px 0;
+}
+
+#main-home {
+	height: 610px;
+	background: url(../img/bg-main_home.jpg) repeat-x #cbcbcb;
+}

@@ -1,4 +1,4 @@
-<aside id="right-sidebar" class="grid_3">
+<aside id="right-sidebar" class="grid_3 omega">
 	<h3 class="sidebar-header"><a href="index.php?page_id=26">Events</a></h3>
 	<?php 
 		//get_sidebar('Sidebar 1'); 

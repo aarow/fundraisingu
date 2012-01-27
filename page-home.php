@@ -21,7 +21,7 @@ get_header(); ?>
 					</h3>
 				</header>
 				<span class="clear"></span>
-				<div class="the_content grid_9">				
+				<div class="the_content">
 					<?php the_content(); ?>
 				</div>			
 				
@@ -44,6 +44,7 @@ get_header(); ?>
 		<?php endwhile; ?>
 	</div>
 </div>
+<span class="clear"></span>
 
 <script type="text/javascript">
 	$('.slide-box-home').cycle();

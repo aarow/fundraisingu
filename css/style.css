@@ -835,6 +835,8 @@ p {
 
 /* @end */
 
+/* @group Abenity Button */
+
 .abenity_ribbon {
 	position: absolute;
 	top: 45px;
@@ -854,6 +856,7 @@ p {
 	text-indent: -999em;
 }
 
+/* @end */
 
 /* @group shadow boxes */
 
@@ -1033,7 +1036,7 @@ button::-moz-focus-inner
 
 #main-header {
 	height: 70px;
-	background: url(../img/bg-header_highlight.jpg) no-repeat center, url(../img/bg-header_basic.jpg);
+	background: url(../img/bg-header_highlight.jpg) no-repeat center, url(../img/bg-header_basic.jpg) repeat-x;
 }
 
 #main-header .wrapper {
@@ -1164,21 +1167,26 @@ article h2 span {
 
 #main-home .the_content {
 	width: 960px;
-	position: absolute;
-	bottom: 40px;
+	top: 550px;
 	margin: 0 10px;
 	font-size: 18px;
+	position: absolute;
 }
 
 .slide-box-home {
-	margin: 40px 0 0 12px;	
-	
-}
-
-.slide-box-home img {
-	display: block;
+	margin: 40px 0 0 12px;
+	height: 350px;
 	width: 944px;
 }
+
+.slide-box-home a {
+	display: none;
+}
+
+.slide-box-home a:first-child {
+	display: block;
+}
+
 /* @end */
 
 /* @group Products Page */
@@ -1388,8 +1396,6 @@ li.product-image-list-li-active {
 /* @end */
 
 /* @group Sidebar Events List */
-
-
 
 .sidebar-events-list a {
 	display: block;

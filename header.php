@@ -5,6 +5,7 @@
 <!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
 <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -54,6 +55,13 @@
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/imgscale.jquery.min.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.cycle.lite.js"></script>
 	
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/libs/modernizr.latest.js"></script>
+	
+	
+	<!--[if lt IE 9]>
+	
+		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/ie.css" />
+	<![endif]-->
 </head>
 
 <body>

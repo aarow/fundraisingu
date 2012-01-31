@@ -1,19 +1,16 @@
 /* @override 
 	http://localhost/fundraisingu/wp-content/themes/fundraisingu/css/style.css?v=2
-	http://the-17.local/fundraisingu/wp-content/themes/fundraisingu/css/style.css?v=2 */
+	http://the-17.local/fundraisingu/wp-content/themes/fundraisingu/css/style.css?v=2
+	http://localhost/fundraisingu/wp-content/themes/fundraisingu/css/style.css?v=2
+*/
 
 /* @group Boilerplate and Grid */
-
-/* @override 
-	http://localhost/fundraisingu/wp-content/themes/fundraisingu/css/style.css?v=2 */
 
 /*  HTML5 ✰ Boilerplate  */
 
 @import url(http://fonts.googleapis.com/css?family=Bevan);
 @import url(http://fonts.googleapis.com/css?family=Holtwood+One+SC);
 @import url(http://fonts.googleapis.com/css?family=PT+Sans+Caption);
-
-
 
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
@@ -1114,12 +1111,12 @@ button::-moz-focus-inner
 	padding: 0 0 50px 0;
 }
 
-article header {
+.main header {
 	margin: 0 0 30px 0;
 	float: left;
 }
 
-article h2 {
+.main header h2 {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
@@ -1129,15 +1126,12 @@ article h2 {
 	font: lighter 40px 'Bevan', serif;
 	letter-spacing: 3px;
 	height: 97px;
+	max-height: 97px;
 	width: 960px;
 }
 
-article h2 span {
+.main header h2 span {
 	whitespace:nowrap;
-}
-
-.the_content {
-	//margin: 40px 0 0 0;
 }
 
 /* @end */
@@ -1274,6 +1268,14 @@ li.product-image-list-li-active {
 	border: 1px solid #333;
 	padding: 5px;
 	margin: 0 2px 5px 0;
+	background: #FFF;
+}
+
+.file-container {
+	margin: 10px 0 0 0;
+}
+.product-description {
+	font-size: 16px;
 }
 
 /* @end */
@@ -1410,10 +1412,15 @@ li.product-image-list-li-active {
 	text-align: center;
 }
 
+.sidebar-event-dayname,
 .sidebar-event-month {
 	text-transform: uppercase;
 	display: block;
 	font-size: 18px;
+}
+
+.sidebar-event-dayname {
+	
 }
 
 .sidebar-event-day {
@@ -1427,6 +1434,29 @@ li.product-image-list-li-active {
 }
 
 /* @end */
+
+/* @group Single Event Page */
+
+.event-image img {
+	width: 100%;
+	border: 1px solid #555;
+}
+
+.event-date p {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.event-day {
+	margin: 0 20px 0 0;
+}
+
+.event-map {
+	
+}
+
+/* @end */
+
 
 /* @group Testimonials */
 
@@ -1453,33 +1483,29 @@ li.product-image-list-li-active {
 
 .testimonials {
 	list-style: none;
+	margin: 0;
+}
+
+.testimonials li {
+	margin: 0 10px 10px 0;
 }
 
 .testimonial_list_item_header {
-	height: 50px;
+	padding: 9px;
+	width: 200px;
 	display: block;
-	position: relative;
+	float: left;
+	text-align: center;
 }
 
-.testimonialLetter,
-.testimonialVideo {
-	font-size: 16px;
-	margin: 0 0 0 55px;
+.testimonial_list_item_header img {
+	display: block;
+	margin: 0 auto 7px auto;
 }
 
-.testimonialLetter::before,
-.testimonialVideo::before {
-	content: "";
-	height: 50px;
-	width: 50px;
-	display: inline-block;
-	background: url(../img/icon-letter.png) no-repeat;
-	position: absolute;
-	top: -15px;
-}
-
-.testimonialVideo::before {
-	background: url(../img/icon-movie.png) no-repeat;
+.testimonial_list_item_header span {
+	display: block;
+	height: 2em;
 }
 
 /* @end */

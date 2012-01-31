@@ -7,13 +7,14 @@ get_header(); ?>
 
 <div id="main" class="main clearfix">
 	<div class="wrapper container_12">
-		<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-		<article id="post-<?php the_ID(); ?>" <?php post_class('grid_12'); ?>>
+		<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>		
+		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<header>
 				<?php if ( !(is_front_page()) ) { ?>
 					<h2><?php the_title(); ?></h2>
 				<?php } ?>
 			</header>			
+			
 			<div class="the_content about grid_6 push_3 alpha">
 				<?php the_content(); ?>
 			</div>
@@ -51,9 +52,8 @@ get_header(); ?>
 					<?php endforeach; ?>
 				</ul>
 			</div>
-			<?php get_template_part( 'sidebar', 'events' ); ?>
-			<span class="clear"></span>
 		</article>
+		<?php get_template_part( 'sidebar', 'events' ); ?>
 		<?php endwhile; ?>
 	</div>	
 </div>

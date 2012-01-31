@@ -9,8 +9,8 @@
 							<a href="#_EVENTURL">
 								<div class="sidebar-event-date">
 									<span class="sidebar-event-month">#M</span>
-									<span class="sidebar-event-day">#d</span>
-									<!-- #_EVENTDATES -->
+									<span class="sidebar-event-day">#j</span>
+									<span class="sidebar-event-dayname">#D</span>
 								</div>
 								<div class="sidebar-event-thumb">#_EVENTIMAGE{100,100}</div>
 								<div class="sidebar-event-link">#_EVENTNAME</div>
@@ -20,4 +20,5 @@
 		));
 	
 	?>
+	<span class="clear"></span>
 </aside>

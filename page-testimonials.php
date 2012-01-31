@@ -19,16 +19,16 @@ get_header(); ?>
 					<div class="the_content grid_9">
 						<?php the_content(); ?>
 						
-						<ul class="testimonials">
+						<ul class="testimonials shadow-box-container">
 							<?php
 								$args = array( 	'post_type' => 'testimonial', 
-												'order'=> 'ASC', 
+												'order' => 'ASC', 
 												'orderby' => 'sort_index', 
 												'numberposts' => -1 );
 								$postslist = get_posts( $args );
 								foreach ($postslist as $post) :  setup_postdata($post); 
 							?> 
-							<li>
+							<li class="shadow-box">
 								<div class="testimonial_list_item_header">
 									<?php
 									$postID = get_the_ID();
@@ -37,9 +37,13 @@ get_header(); ?>
 									} else {
 										$headerLink = '<a class="testimonialLetter" href="#testimonial_letter_' . $postID . '">';
 									} 
-										echo $headerLink;
-										print_custom_field('testimonial_title');
-										echo '</a>';
+									
+									// print link, image, and title
+									echo $headerLink;
+									print_custom_field('thumbnail:to_image_tag', 'thumbnail-testimonials');
+									echo '<span>';
+									print_custom_field('testimonial_title');
+									echo '</span></a>';
 									?>							
 								</div>
 								<div style="display:none;" class="testimonial_list_item_body" id="testimonial_letter_<?php echo $postID; ?>">
@@ -57,9 +61,6 @@ get_header(); ?>
 						<?php endforeach; ?>
 						</ul>
 					</div>			
-					<footer>
-						<?php edit_post_link( __( 'Edit' ), '<p>', '</p>' ); ?>
-					</footer>
 				</article>
 				
 			<?php endwhile; ?>

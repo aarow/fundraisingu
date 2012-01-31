@@ -53,7 +53,8 @@ get_header(); ?>
 	//clone the images as thumbnail list
 	$('.product-image-list').clone().addClass('product-image-thumb-list').removeClass('product-image-list').prependTo('.product-image-container');
 	
-	$('.product-image-thumb-list img').imgscale();
+	// scale down image list
+	$('.product-image-thumb-list img').imgscale( {scale:'fill'} );
 	
 	//show large image on thumbnail hover
 	$('.product-image-list li').first().addClass('product-image-list-li-active');

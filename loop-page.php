@@ -9,9 +9,6 @@
 		<div class="the_content grid_9">
 			<?php the_content(); ?>
 		</div>			
-		<footer>
-			<?php edit_post_link( __( 'Edit' ), '<p>', '</p>' ); ?>
-		</footer>
 	</article>
 	
 <?php endwhile; ?>

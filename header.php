@@ -35,8 +35,8 @@
 	<link rel="shortcut icon" href="/favicon.ico">
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 	
-	<link rel="stylesheet" href="<?php bloginfo("stylesheet_directory");?>/css/style.css?v=2">
-	<link rel="stylesheet" href="<?php bloginfo("stylesheet_directory");?>/style.css">
+	<link rel="stylesheet/less" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/style.less" />
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/less-1.2.1.min.js"></script>
 	<?php wp_head(); ?>
 	
 	
@@ -55,11 +55,12 @@
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/imgscale.jquery.min.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.cycle.lite.js"></script>
 	
+
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/libs/modernizr.latest.js"></script>
 	
-	
 	<!--[if lt IE 9]>
-	
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/libs/mootools-core-1.4.3.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/libs/selectivizr-min.js"></script>
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/ie.css" />
 	<![endif]-->
 </head>

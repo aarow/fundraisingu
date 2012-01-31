@@ -40,7 +40,12 @@ get_header(); ?>
 						
 							<ul class="product_list shadow-box-container">
 								<?php
-									$args = array( 'post_type' => 'product', 'order'=> 'ASC', 'orderby' => 'sort_index', );
+									$args = array( 
+										'post_type' => 'product',
+										'order'		=> 'ASC', 
+										'orderby' 	=> 'sort_index',
+										'numberposts' => -1
+									);
 									$postslist = get_posts( $args );
 									foreach ($postslist as $post) :  setup_postdata($post); 
 								?> 

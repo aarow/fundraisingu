@@ -1227,12 +1227,15 @@ button::-moz-focus-inner
 	padding: 10px;
 	background-color: #144a8f;
 	color: #FFF;
+	float: left;
 }
 
 .calculator-desc,
+.calculator-desc p,
 .calculator-form {
 	width: 215px;
 	float: left;
+	text-align: left;
 }
 
 .calculator-form {
@@ -1518,12 +1521,82 @@ li.product-image-list-li-active {
 
 /* @end */
 
+/* @group Event List Page */
+
+.event-table-container {
+ 	padding: 0;
+}
+
+.event-table-container.box:before,
+.event-table-container.box:after {
+  bottom: 12px;
+}
+
+.event-table {
+	width: 100%;
+	height: 100%;
+}
+
+.event-table-container td {
+	padding: 15px 20px;
+	border: 1px solid #FFF;
+	font-size: 16px;
+	vertical-align: middle;
+}
+
+th.event-table-date {
+	padding: 0 20px 10px 0;
+	text-align: right;
+}
+
+
+td.event-table-date {
+	background-color: #bed1e9;
+	text-align: right;
+}
+
+.event-table-date span:first-child {
+	display: block;
+	font-weight: bold;
+}
+
+th.event-table-event {
+	padding: 0 0 10px 20px;
+	text-align: left;
+}
+
+td.event-table-event {
+	background-color: #ededed;
+}
+
+.event-table-event img {
+	float: left;
+}
+
+.event-table-event span {
+	display: block;
+	white-space: nowrap;
+	margin-left: 60px;
+}
+
+.event-table-event span:last-child {
+	font-size: 12px;
+	font-style: italic;
+}
+
+.event-table-link {
+	display: block;
+	color: #444444;
+	text-decoration: none;
+}
+
+.event-table-link:hover {
+	color: #000;
+}
+
+/* @end */
 
 /* @group Testimonials */
-
-.fancybox-outer{
-    background: #000 url("../img/ajax-loader.gif") no-repeat 50% 50% !important;
-}
 
 .testimonial_list_item_body {
 	background: #FFF url(../img/bg_testimonial.jpg) no-repeat;
@@ -1611,6 +1684,12 @@ li.product-image-list-li-active {
 
 #footer-nav {
 	margin: 30px 0 0 0;
+	text-align: center;
+}
+
+#footer-nav li {
+	display: inline-block;
+	padding: 15px;
 }
 
 #footer-nav a {
@@ -1622,12 +1701,41 @@ li.product-image-list-li-active {
 	color: #607890;
 }
 
-#copyright {
+#copyright p {
+	font-size: 12px;
+	font-weight: normal;
 	text-align: center;
 	margin: 30px 0 10px 0;
 }
 
-
-
 /* @end */
 
+#map-usa {
+	display: none;
+	height: 300px;
+	width: 500px;
+}
+
+.fancybox-outer {
+    background: transparent !important;
+}
+
+.fancybox-iframe {
+    background: #000 url("../img/ajax-loader.gif") no-repeat 50% 50% !important; 
+}
+
+.bubbleInfo {
+    position: relative;
+}
+
+.popup {
+    position: absolute;
+    display: none; /* keeps the popup hidden if no JS available */
+    border: 1px solid #555;
+    background: #000;
+    width: 150px;
+    color: #FFF;
+	text-shadow: none;
+	z-index: 1000;
+	padding: 5px;
+}

@@ -18,7 +18,7 @@ get_header(); ?>
 					</header>			
 						<div class="grid_6 push_3">
 							<?php the_content(); ?>
-							<div class="calculator-box clearfix">
+							<div class="calculator-box clearfix box">
 								<div class="calculator-desc">
 									<p>Enter the number of students in your group in the box to calculate how much profit you could make with any fundraiser:</p>
 								</div>
@@ -49,10 +49,15 @@ get_header(); ?>
 									$postslist = get_posts( $args );
 									foreach ($postslist as $post) :  setup_postdata($post); 
 								?> 
-									<li class="shadow-box">
-										<a href="<?php print get_permalink(); ?>" class="product_list_anchor" >
+									<li class="shadow-box bubbleInfo ">
+										<a href="<?php print get_permalink(); ?>" class="product_list_anchor trigger" >
 											<img class="product_list_image" src="<?php print_custom_field('product_image_thumbnail'); ?>" />
 										</a>
+										<div class="popup">
+											<span>
+												<?php print_custom_field('product_name'); ?>
+											</span>
+										</div>
 									</li>
 								<?php endforeach; ?>
 							</ul>

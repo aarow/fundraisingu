@@ -63,6 +63,13 @@
 		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/libs/selectivizr-min.js"></script>
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/ie.css" />
 	<![endif]-->
+	
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/js/jquery.vector-map/jquery.vector-map.css" />
+	
+	<script type="text/javascript">
+		var templateDir = "<?php bloginfo('template_directory') ?>";
+	</script>
+	
 </head>
 
 <body>

@@ -49,6 +49,9 @@ get_header(); ?>
 	</div>
 </div>
 
+
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/imgscale.jquery.min.js"></script>
+
 <script type="text/javascript">
 	//clone the images as thumbnail list
 	$('.product-image-list').clone().addClass('product-image-thumb-list').removeClass('product-image-list').prependTo('.product-image-container');

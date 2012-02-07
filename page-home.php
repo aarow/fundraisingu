@@ -46,6 +46,8 @@ get_header(); ?>
 </div>
 <span class="clear"></span>
 
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.cycle.lite.js"></script>
+
 <script type="text/javascript">
 	$('.slide-box-home').cycle();
 </script>

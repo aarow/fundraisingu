@@ -7,6 +7,8 @@
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 
 <head>
+	
+
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -34,12 +36,14 @@
 	
 	<link rel="shortcut icon" href="/favicon.ico">
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		
 	
-	<link rel="stylesheet/less" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/style.less" />
-	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/less-1.2.1.min.js"></script>
 	<?php wp_head(); ?>
 	
-	
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css" />
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 	
 	
@@ -47,10 +51,6 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/js/fancybox/jquery.fancybox.css?v=2.0.4" type="text/css" media="screen" />
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/fancybox/jquery.fancybox.pack.js?v=2.0.4"></script>
 	
-	
-	<!-- prefixfree -->
-	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/prefixfree.min.js"></script>
-		
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/libs/modernizr.latest.js"></script>
 	
 	<!--[if lt IE 9]>

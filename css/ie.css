@@ -7,7 +7,29 @@
 	padding: 0 0 97px 0;
 }
 
+.main header {
+	margin: 0 0 30px 0;
+	float: none;
+}
+
 #main-home {
 	height: 610px;
 	background: url(../img/bg-main_home.jpg) repeat-x #cbcbcb;
+	z-index: -1;
+}
+
+#main-nav li,
+#footer-nav li {
+	zoom: 1;
+	*display: inline;
+	_height: 100%;
+	*margin: 25px 15px 0 15px;
+}
+
+#main-header h1 {
+	left: 0;
+}
+
+article header h2 {
+	*margin: 20px 0 0 0;
 }

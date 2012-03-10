@@ -27,18 +27,20 @@ get_header(); ?>
 				
 				
 				<div class="slide-box-home">
-					<?php
-						$args = array( 	'post_type' => 'slide', 
-										'order'=> 'ASC', 
-										'orderby' => 'sort_index', 
-										'numberposts' => 2 );
-						$postslist = get_posts( $args );
-						foreach ($postslist as $post) :  setup_postdata($post); 
-					?> 
-					<a href="<?php print_custom_field('slide_link:to_link_href','http://yoursite.com/default/page/');?>">
-						<img src="<?php print_custom_field('slide_image:to_image_src'); ?>" />
-					</a>
-					<?php endforeach; ?>
+					<div class="slide-box-home-container">
+						<?php
+							$args = array( 	'post_type' => 'slide', 
+											'order'=> 'ASC', 
+											'orderby' => 'sort_index', 
+											'numberposts' => 2 );
+							$postslist = get_posts( $args );
+							foreach ($postslist as $post) :  setup_postdata($post); 
+						?> 
+						<a href="<?php print_custom_field('slide_link:to_link_href','http://yoursite.com/default/page/');?>">
+							<img src="<?php print_custom_field('slide_image:to_image_src'); ?>" />
+						</a>
+						<?php endforeach; ?>
+					</div>
 				</div>				
 			</article>
 		<?php endwhile; ?>
@@ -49,7 +51,7 @@ get_header(); ?>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.cycle.lite.js"></script>
 
 <script type="text/javascript">
-	$('.slide-box-home').cycle();
+	$('.slide-box-home-container').cycle();
 </script>
 
 

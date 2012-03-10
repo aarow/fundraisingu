@@ -42,8 +42,6 @@
 	
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css" />
 
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 	
 	
@@ -54,11 +52,11 @@
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/libs/modernizr.latest.js"></script>
 	
 	<!--[if lt IE 9]>
-		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/libs/mootools-core-1.4.3.js"></script>
-		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/libs/selectivizr-min.js"></script>
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/ie.css" />
 	<![endif]-->
-	
+
+
+
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/js/jquery.vector-map/jquery.vector-map.css" />
 	
 	<script type="text/javascript">

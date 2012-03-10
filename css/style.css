@@ -1189,7 +1189,7 @@ button::-moz-focus-inner {
 /* @group Home Page */
 #main-home {
   height: 610px;
-  background: url(../img/slide-frame.png) no-repeat center 158px, url(../img/bg-main_home.jpg) repeat-x, url(../img/bg-main_basic.jpg);
+  background: url(../img/bg-main_home.jpg) repeat-x, url(../img/bg-main_basic.jpg);
   position: relative;
 }
 #main-home header {
@@ -1212,16 +1212,27 @@ button::-moz-focus-inner {
   font-size: 18px;
   position: absolute;
 }
+#main-home article {
+  position: relative;
+}
 .slide-box-home {
-  margin: 40px 0 0 12px;
-  height: 350px;
-  width: 944px;
+  margin: 40px 0 0 10px;
+  left: -80px;
+  height: 500px;
+  width: 1300px;
+  background: url(../img/slide-frame.png) no-repeat;
+  position: absolute;
 }
 .slide-box-home a {
   display: none;
 }
 .slide-box-home a:first-child {
   display: block;
+}
+.slide-box-home-container {
+  left: 78px;
+  top: 13px;
+  position: absolute;
 }
 /* @end */
 /* @group Products Page */

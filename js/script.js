@@ -1,4 +1,4 @@
-init_tooltips_for_calculator();
+init_tooltips();
 
 /*
 
@@ -74,7 +74,7 @@ bubble info for products, etc
 
 */
 
-function init_tooltips_for_calculator() {
+function init_tooltips() {
   $('.bubbleInfo').each(function () {
     // options
     var yDistance = 10;
